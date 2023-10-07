@@ -6,11 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress:open": "cypress open",
+    "test": "cypress run --component --spec 'cypress/component/NotifiSubscriptionCard.cy.tsx' --headed"
   },
   "dependencies": {
     "@next/font": "13.4.4",
-    "@notifi-network/notifi-react-card": "^0.73.2-alpha.3",
+    "@notifi-network/notifi-react-card": "^0.85.2",
     "@types/node": "20.2.5",
     "@types/react": "18.2.9",
     "@types/react-dom": "18.2.4",
@@ -20,5 +22,8 @@
     "react-dom": "18.2.0",
     "typescript": "5.1.3",
     "wagmi": "^0.10.8"
+  },
+  "devDependencies": {
+    "cypress": "^13.3.0"
   }
 }

@@ -1,4 +1,7 @@
-import { NotifiContext, NotifiSubscriptionCard } from "@notifi-network/notifi-react-card";
+import {
+  NotifiContext,
+  NotifiSubscriptionCard,
+} from "@notifi-network/notifi-react-card";
 import "@notifi-network/notifi-react-card/dist/index.css";
 
 import { arrayify } from "ethers/lib/utils.js";
@@ -32,6 +35,7 @@ export default function Profile() {
         <NotifiSubscriptionCard
           cardId="d0fd50cfb6e64f49ac28c53a1c4bf5a7"
           darkMode //optional
+          inputs={{ userWallet: address ?? "" }}
         />
       </div>
     </NotifiContext>
