@@ -14,3 +14,4 @@ jobs:
           config-file: cypress.config.ts
           browser: chrome
           headless: true
+          command: npm run test
